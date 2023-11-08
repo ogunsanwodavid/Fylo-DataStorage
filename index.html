@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----------Important meta tags----------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Junior Frontend Mentor Challenge to build a data storage prototype">
+    <meta property="og:description" content="Junior Frontend Mentor Challenge to build a data storage prototype">
+    <meta name="author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:author" content="Ogunsanwo David Oluwadamilare">
+    <meta property="og:title" content="Fylo Data Storage">
+
+    <!-----------Title---------->
+    <title>Fylo Data Storage</title>
+
+    <!------------Favicon------------->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <!-------Linked stylesheets, fonts, icons and libraries------------>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+
+    <!----------Fontawesome icons---------->
+
+
+    <!--Added styles-->
+
+    <style>
+        body{
+            background-image: url(./assets/images/bg-mobile.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        @media (min-width: 850px) {
+            body{
+                background-image: url(./assets/images/bg-desktop.png);
+                background-size: 100% 50%;
+                background-position: bottom;
+            }
+
+            #top-msg::after{
+                -webkit-clip-path: polygon(100% 0, 50% 0, 100% 100%);
+                clip-path: polygon(100% 0, 50% 0, 100% 100%);
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-very-dark-blue sm:w-[100vw] sm:h-[100vh] sm:flex sm:items-center sm:justify-center">
+    <div class="flex flex-col space-y-4 w-full p-4 sm:h-max sm:flex-row sm:justify-center sm:items-end sm:space-y-0 sm:space-x-4 sm:p-0">
+        <div class="flex flex-col space-y-8 w-full h-max bg-dark-blue p-8 mt-20 rounded-lg rounded-tr-[6rem] sm:w-max sm:mt-0 sm:pr-24">
+            <img src="./assets/images/logo.svg" alt="" class="block w-max h-10">
+
+            <div class="flex space-x-4">
+                <div class="flex items-center justify-center h-12 w-12 bg-very-dark-blue rounded-xl">
+                    <img src="./assets/images/icon-document.svg" alt="">
+                </div>
+                
+                <div class="flex items-center justify-center h-12 w-12 bg-very-dark-blue rounded-xl">
+                    <img src="./assets/images/icon-folder.svg" alt="">
+                </div>
+
+                <div class="flex items-center justify-center h-12 w-12 bg-very-dark-blue rounded-xl">
+                    <img src="./assets/images/icon-upload.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="relative flex flex-col w-full h-max bg-dark-blue p-8 pb-12 rounded-lg sm:w-max sm:min-w-[500px] sm:p-8">
+            <p class="text-pale-blue text-sm text-center sm:text-start">You've used <span class="text-white font-bold">815 GB</span> of your storage</p>
+            <div class="w-full h-max mt-4 rounded-full bg-very-dark-blue p-[0.15rem]">
+                <div class="flex justify-end w-[80%] h-full rounded-full bg-gradient-to-r from-gradient-1 to-gradient-2 p-[0.15rem]">
+                    <div class="h-3 w-3 bg-white rounded-full">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-3">
+                <div class="text-sm text-pale-blue font-bold">0 GB</div>
+                <div class="text-sm text-pale-blue font-bold">1000 GB</div>
+            </div>
+
+            <div id="top-msg" class="absolute bottom-0 right-[50%] -translate-x-[-50%] -translate-y-[-50%] flex space-x-3 items-center justify-center w-max p-4 bg-white rounded-lg sm:top-0 sm:right-[10%] sm:-translate-x-0 sm:-translate-y-[50%] sm:h-max sm:rounded-br-none after:hidden sm:after:block after:content-[''] after:absolute after:bottom-0 after:right-0 after:translate-y-[100%] after:bg-white after:w-5 after:h-4 after:z-10">
+                <div class="text-black font-bold text-4xl">185</div>
+                <div class="text-grayish-blue text-sm font-bold">GB LEFT</div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+
+
+    <!--Scripts-->
+</body>
